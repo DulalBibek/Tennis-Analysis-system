@@ -1,5 +1,4 @@
 **/*.pt
-**/*.mp4
 **/*.pkl
 **/__pycache__/
 .vscode/
