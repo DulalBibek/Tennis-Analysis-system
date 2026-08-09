@@ -1,8 +1,8 @@
 from ultralytics import YOLO
 
-model=YOLO('yolov8x')
+model=YOLO('/Users/bibekdulal/Desktop/Tennis_analysis/models/weights/last.pt')
 
-result=model.predict('/Users/bibekdulal/Desktop/Tennis_analysis/input_videos/input_video.mp4', save=True)
+result=model.predict('/Users/bibekdulal/Desktop/Tennis_analysis/input_videos/input_video.mp4',conf=0.4, save=True)
 
 print(result)
 
